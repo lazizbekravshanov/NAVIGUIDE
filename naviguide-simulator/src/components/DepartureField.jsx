@@ -45,7 +45,7 @@ export function DepartureField({
       data-testid={testId}
       aria-disabled={disabled || undefined}
       className={compact
-        ? "naviguide-departure-field h-6 rounded-md border border-white/10 bg-slate-800/50 px-1 inline-flex items-center w-max"
+        ? "naviguide-departure-field h-6 rounded-md border border-white/10 bg-slate-800/50 px-1 inline-flex items-center w-max text-[9px]"
         : "naviguide-departure-field h-[46px] rounded-lg border border-white/10 bg-slate-800/50 px-2 py-1"}
     >
       {compact ? (

@@ -89,12 +89,12 @@ export const LogbookChat = memo(function LogbookChat({ messages = [], pending = 
     <div data-testid="logbook-chat" className="sim-box-chat rounded-lg border border-slate-700/60 bg-slate-800/40 p-2 min-w-0">
       <div className="flex items-center gap-1.5 mb-1 flex-shrink-0">
         <MessageSquare size={12} className="text-slate-400" />
-        <div className="text-[12px] font-semibold text-slate-200 leading-snug">{t("logbookChatTitle")}</div>
-        <span className="ml-auto text-[12px] text-slate-400">{admin ? t("logbookChatLogged") : t("logbookChatNotLogged")}</span>
+        <div className="text-[12px] font-semibold text-slate-200 leading-tight">{t("logbookChatTitle")}</div>
+        <span className="ml-auto text-[12px] leading-tight text-slate-400">{admin ? t("logbookChatLogged") : t("logbookChatNotLogged")}</span>
       </div>
       <div
         data-testid="logbook-chat-reply"
-        className="flex-1 min-h-0 rounded-md border border-slate-700/60 bg-slate-950/55 px-1.5 py-1"
+        className="flex-1 min-h-0 rounded-md border border-slate-700/60 bg-slate-950/55 px-1.5 py-0.5"
       >
         <div ref={listRef} className="h-full overflow-y-auto sidebar-scroll space-y-1 min-w-0" data-testid="logbook-chat-list" role="log" aria-live="polite">
           {messages.map((m, i) => (
